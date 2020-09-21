@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///App.scss"],"names":[],"mappings":"AAAA,gCAA0B,sBAAuB,CAAC,sCAAsC,eAA0D,CAAhG,4CAAuD,WAAW,CAAC,4BAA6B,C","file":"app.css","sourcesContent":[".webpack-xblock-react-app{border:2px groove black}.webpack-xblock-react-app .app-header{font-weight:bold;margin:20px;border-bottom:2px solid black}\n"],"sourceRoot":""}
