@@ -8,6 +8,14 @@ import { selectors, actions, thunkActions } from 'store';
 
 import './App.scss';
 
+/**
+ * Simple Example XBlock React component.
+ * Displays a value from the xblock server, housed/updated in redux.
+ * Provides a paragon Button that sends a message to update the counter over thunk.
+ * Simple styling example included.
+ *
+ * @param {object} data - initial xblock data.  Example expects a count key/value.
+ */
 export class App extends Component {
   componentDidMount() {
     this.props.loadCount(this.props.data.count);

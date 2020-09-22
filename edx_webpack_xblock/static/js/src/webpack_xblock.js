@@ -11,7 +11,20 @@ import * as counterComms from 'comms/counter';
 import { counter as counterURIs } from 'variables/uris';
 import { actions } from 'store';
 
-/* Javascript for webpack_xblock. */
+/**
+ * Simple ES6 XBlock implementation
+ * Initializes both a React and a non-React xblock example, to show how the 2 relate
+ * to each other, and how you can do what you expect from a non-React implementation
+ * simply with a React implementation as well.
+ *
+ * Tracks the redux store in order to allow the non-react handleElementClick event
+ * to update the store, and provides a local updateCount method which is passed into
+ * the redux store thunk instance as extra arguments, allowing the React/redux implementation
+ * to communicate back to the non-React.
+ *
+ * Provides "starting-point" command, to be called with an xblock runtime, element, and
+ * initial data.
+ */
 export class WebpackXBlock {
   constructor(runtime, element, data) {
     this.runtime = runtime;
